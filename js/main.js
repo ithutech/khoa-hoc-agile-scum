@@ -11,7 +11,7 @@ $("#submitIOT").click(function(event) {
 	var sdt = $("#sdt").val();
     var url = script_url + "?callback=result&masv=" + masv + "&lop=" + lop + "&email=" + email +  "&hovaten=" + hovaten + "&cauhoi=" +cauhoi +"&sdt="+sdt+ "&action=register";
 	console.log(url);
-    if (masv == '' || lop == '' ||dtb ==''||gioitinh ==''||sdt ==''||chuyennganh ==''||date ==''||email =='')
+    if (masv == '' || lop == '' ||sdt ==''||email =='')
         return alert("Vui lòng điền đầy đủ thông tin");
     var result = $(".input-group #email");
     result.text("");
